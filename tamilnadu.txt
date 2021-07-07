@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="TamilNadu statistics">
+<head>
+    <script src="~/Scripts/angular.js"></script>
+</head>
+<body ng-controller="TamilNadu Controller"> 
+    <h1>TamilNadu Information:</h1>
+    <form ng-submit="submitTamilNaduForm()" >
+            <label for="districtName" >district Name: </label><br />
+            <input type="text" id="districtName" ng-model="TamilNadu.districtName" /> <br />
+
+            <label for="areaName">Area Name</label><br />
+                <input type="text" id="areaName" ng-model="TamilNadu.areaName" /> <br />
+            <label for="population" >Population</label><br />
+                <input type="range" id="population" ng-model="TamilNadu.Population" /> <br /><br />
+           <button ng-click="save(myForm)" ng-disabled="myForm.$pristine">
+     save
+    </button>
+    
+   </script>  
+</body>
+</html>
